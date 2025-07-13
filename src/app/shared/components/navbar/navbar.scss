@@ -1,0 +1,94 @@
+/* Custom SCSS styles for Angular component */
+/* Add these to your component's .scss file */
+
+// Variables
+$primary-purple: #7c3aed;
+$primary-pink: #ec4899;
+$primary-pink-hover: #db2777;
+$text-dark: #1f2937;
+$text-gray: #374151;
+$text-light-gray: #e5e7eb;
+$border-gray: #d1d5db;
+
+.top-bar {
+  background-color: $primary-purple;
+  color: white;
+  padding: 8px 0;
+  font-size: 14px;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-light-gray;
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $text-dark !important;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $text-gray !important;
+    font-weight: 500;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $primary-purple !important;
+    }
+  }
+}
+
+.search-container {
+  position: relative;
+  max-width: 300px;
+}
+
+.search-input {
+  border: 1px solid $border-gray;
+  border-radius: 0;
+  padding-right: 45px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $primary-pink;
+  border: none;
+  color: white;
+  padding: 0 15px;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $primary-pink-hover;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    margin-left: 0.5em;
+  }
+}
+
+.language-dropdown,
+.currency-dropdown {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.main-navbar {
+  padding: 1rem 0;
+}

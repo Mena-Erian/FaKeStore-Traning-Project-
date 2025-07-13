@@ -1,0 +1,126 @@
+<nav class="top-bar">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center">
+          <span class="me-4">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:codewithmena@gmail.com"
+              >codewithmena&#64;gmail.com</a
+            >
+          </span>
+          <span>
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:01200523080">(12345)67890</a>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-end">
+          <div class="dropdown me-3">
+            <button
+              class="btn language-dropdown dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">English</a></li>
+              <li><a class="dropdown-item">Spanish</a></li>
+              <li><a class="dropdown-item">French</a></li>
+            </ul>
+          </div>
+          <div class="dropdown me-3">
+            <button
+              class="btn currency-dropdown dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              USD
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">USD</a></li>
+              <li><a class="dropdown-item">EUR</a></li>
+              <li><a class="dropdown-item">GBP</a></li>
+            </ul>
+          </div>
+          <span class="me-3">
+            <a routerLink="/auth/login"
+              ><i class="fas fa-user me-1"></i>Login</a
+            >
+          </span>
+          <span class="me-3">
+            <a routerLink="/wishlist"
+              ><i class="fas fa-heart me-1"></i>Wishlist</a
+            >
+          </span>
+          <span>
+            <a routerLink="/main/cart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/main/home">Hekto</a>
+
+    <button
+      title="Toggle navigation"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Home
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/main/home">Home 1</a></li>
+            <li><a class="dropdown-item">Home 2</a></li>
+            <li><a class="dropdown-item">Home 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/main/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/main/cart">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="form-control search-input"
+          placeholder=""
+          title="Search"
+        />
+        <button class="btn search-btn" type="button" title="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
